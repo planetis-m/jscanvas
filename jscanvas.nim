@@ -78,7 +78,7 @@ type
       Multiply = "multiply",
       Screen = "screen",
       Overlay = "overlay",
-      Darken = "darker",
+      Darken = "darken",
       Lighten = "lighten",
       ColorDodge = "color-dodge",
       ColorBurn = "color-burn",
@@ -200,7 +200,7 @@ proc drawImage*(self: CanvasContext, image: ImageElement, sx, sy, sWidth, sHeigh
 # Pixel manipulation
 proc createImageData*(self: CanvasContext, sw, sh: int | float): ImageData
 proc createImageData*(self: CanvasContext, imagedata: ImageData): ImageData
-proc getImageData*(self: CanvasContext, s, sy, sw, sh: int | float): ImageData
+proc getImageData*(self: CanvasContext, sx, sy, sw, sh: int | float): ImageData
 proc putImageData*(self: CanvasContext, imagedata: ImageData, dx, dy: int | float)
 proc putImageData*(self: CanvasContext, imagedata: ImageData, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight: int | float)
 

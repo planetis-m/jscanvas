@@ -19,7 +19,7 @@ var ballRadius = 10
 
 ctx.beginPath()
 ctx.arc(x, y, ballRadius, 0, Pi*2)
-ctx.fillStyle = $colBlack # could also be: $rgb(0, 0, 0)
+ctx.fillStyle = $colBlack # could also be: $rgb(0, 0, 0) or just "rgb(0,0,0)"
 ctx.fill()
 ctx.closePath()
 ```
